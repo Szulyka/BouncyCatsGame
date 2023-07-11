@@ -1,0 +1,70 @@
+body {
+    background: linear-gradient(130deg, #e402e4, #0098d4) no-repeat center center fixed;
+    height: 100%;
+    overflow: hidden;
+}
+
+table{
+    table-layout: fixed;
+    border-collapse: separate;
+    border-radius: 10px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    margin: 30px;
+    border-spacing: 6px;
+}
+
+td,
+th {
+    width: 6vh;
+    height: 6vh;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 10px;
+    background-size: contain;
+    background-position: center center;
+    overflow: hidden;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px 2px #575757;
+}
+
+h4 {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.tablazatContainer {
+
+    display: flex;
+    justify-content: center;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.katt {
+    background-color: red;
+}
