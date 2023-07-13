@@ -384,11 +384,11 @@ newGame.addEventListener('click', function () {
         const cell = document.getElementById('blackCell' + i);
         blackKispadCells.push(cell)
     }
-    
+
     for (let i = 1; i <= 8; i++) {
         const cell = document.getElementById('whiteCell' + i);
         whiteKispadCells.push(cell)
-    }   
+    }
     setWhosTurn()
     updateCats()
 })
@@ -409,7 +409,11 @@ for (let cell of cells) {
                 if (nX >= 0 && nX < 6 && nY >= 0 && nY < 6) {
                     let nValue = table[nX][nY]
                     if (nValue !== "") {
-                        getCellByXY(nX, nY).style.outline = '2px solid red';
+                        let pushX = nX + (nX - x)
+                        let pushY = nY + (nY - y)
+                        if (!(pushX >= 0 && pushX < 6 && pushY >= 0 && pushY < 6) || table[pushX][pushY] === "") {
+                            getCellByXY(nX, nY).style.outline = '2px solid red';
+                        }
                     }
                 }
             }
