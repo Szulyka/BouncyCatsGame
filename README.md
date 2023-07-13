@@ -42,4 +42,4 @@ A listában tegyél `[X]` jelet minden olyan feladat elé, amelyet legalább ré
 [ ] Mentés: játék közben egy gombra kattintva tartósan elmenthető az aktuális állapot, amely a kezdőképernyőről betölthető és folytatható (2 pont)
 [ ] Időmérés: a játékosokhoz tartozik egy-egy időmérő, fejenként 2 perc gondolkodási idővel, ami az adott játékos lépésére várva visszaszámol (sakkóraszerű mechanizmus) — amelyik játékosnak elfogy a gondolkodási ideje, automatikusan veszít (3 pont)
 
-todo: reszponzivitas, kijeloles bugfix
+todo: reszponzivitas
