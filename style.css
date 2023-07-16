@@ -1,14 +1,12 @@
 body {
     background: linear-gradient(130deg, #e402e4, #0098d4) no-repeat center center fixed;
     height: 100%;
-    overflow: hidden;
 }
 
 table{
     table-layout: fixed;
     border-collapse: separate;
     border-radius: 10px;
-    overflow: hidden;
     aspect-ratio: 1 / 1;
     margin: 30px;
     border-spacing: 6px;
@@ -16,6 +14,7 @@ table{
 
 td,
 th {
+    aspect-ratio: 1 / 1;
     width: 6vh;
     height: 6vh;
     background: rgba(255, 255, 255, 0.15);
@@ -23,11 +22,11 @@ th {
     padding: 10px;
     background-size: contain;
     background-position: center center;
-    overflow: hidden;
 }
 
 h1,
 h2 {
+    font-weight: bold;
     text-align: center;
     font-size: 40px;
     color: rgb(255, 255, 255);

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szabályok</title>
+    <link rel="stylesheet" type="text/css" href="styleResponsive.css">
+</head>
+
+<body>
+    <h1 style="margin: 60px;">
+        A játéktér egy 6x6 négyzetes cellából álló pálya.
+        <br>
+        A játékot két fő játsza egymás ellen, akik felváltva helyeznek el cicákat a pályán, kattintással.
+        <br>
+        Mindkét játékos 8 cicával rendelkezik, amelyek kezdetben a pályán kívüli kispadon helyezkednek el.
+        <br>
+        Egy új cica elhelyezése az összes szomszédos cellában lévő cicát (a sajátokat és az ellenfélét is egyaránt) egy
+        cellával távolabb löki az elhelyezés helyétől.
+        <br>
+        Egyetlen eset van, amikor a cica nem lökődik el — ha abban a cellában, ahová így kerülne, már egy másik cica
+        blokkolja ebben.
+        <br>
+        A pálya szélén lévő cicák is ellökődnek — leesnek a tábláról és visszatérnek az őket felhelyező játékos
+        kispadjára.
+        <br>
+        A játék célja, hogy a lökdösődések lejátszódása után három egyszínű cica kerüljön
+        egymás mellé vízszintesen, függőlegesen vagy átlósan. Ilyenkor a játékos egy pontot kap, a három cica pedig
+        visszakerül a kispadra. (Figyelem! Az is lehetséges, hogy lökdösődés után az ellenfél három cicája kerül egymás
+        mellé — ilyenkor a pont az ellenfélnek jár!)
+        <br>
+        A játék kétféleképpen érhet véget:
+        Ha az egyik játékos elérte a megadott pontszámot. Ebben az esetben értelemszerűen ez a játékos a nyertes.
+        Ha az egyik játékosnak egyidejűleg az összes cicája a pályán van. Ebben az esetben ő automatikusan veszít, mivel
+        nem tud a továbbiakban lépni.
+    </h1>
+
+</body>
+</html>

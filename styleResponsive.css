@@ -1,0 +1,78 @@
+body {
+    background: linear-gradient(130deg, #e402e4, #0098d4) no-repeat fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+table {
+    width: 2vh;
+    height: 2vh;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 6px;
+}
+
+.blackKispad td,
+.blackKispad th,
+.whiteKispad td,
+.whiteKispad th,
+.main td,
+.main th {
+    width: 6vh;
+    height: 6vh;
+    overflow: hidden;
+    background-size: contain;
+    background-position: center center;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.main td,
+.main th {
+    width: 9vh;
+    height: 9vh;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.2vh;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h3 {
+    font-size: 0.6vw;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px 2px #575757;
+}
+
+h4 {
+    font-size: 0.8vw;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.newGame, .rules {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    margin-left: 46vw;
+    margin-right: 46vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.newGame:hover, .rules:hover{
+    background-color: rgba(255, 255, 255, 0.342);
+}

@@ -4,8 +4,11 @@ let points = document.querySelector('.points')
 let maxHtml = document.querySelector('.maxPoints')
 let blackNameHtml = document.querySelector('.blackName')
 let whiteNameHtml = document.querySelector('.whiteName')
-let newGame = document.querySelector('.newGame')
+let newGame = document.querySelector('.nb')
+let rules = document.querySelector('.rules')
+let re = document.querySelector('.re')
 
+document.body.style.userSelect = 'none';
 
 let turn = 'white'
 let pointsToWin = 2
@@ -193,6 +196,7 @@ let blackName = prompt("Add meg a fekete játékos nevét:")
 let whiteName = prompt("Add meg a fehér játékos nevét:")
 blackNameHtml.innerText = blackName
 whiteNameHtml.innerText = whiteName
+
 
 generateTable(6, 6)
 //inicializalasnak meghivjuk
@@ -391,7 +395,11 @@ newGame.addEventListener('click', function () {
     }
     setWhosTurn()
     updateCats()
+    changeKispad('black')
+    changeKispad('white')
 })
+
+
 
 for (let cell of cells) {
     cell.addEventListener('mouseenter', () => {
@@ -442,3 +450,19 @@ for (let cell of cells) {
         }
     });
 }
+
+delegate(mainTable, 'mouseover', 'td', function (event) {
+    this.style.backgroundColor = 'rgba(255, 255, 255, 0.25)'
+})
+
+delegate(mainTable, 'mouseout', 'td', function (event) {
+    this.style.backgroundColor = ''
+})
+
+rules.addEventListener('click', function () {
+    window.location.href = 'rules.html';
+})
+
+re.addEventListener('click', function () {
+    history.back();
+})
